@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My favorite book</title>
+    <link rel="stylesheet" href= "image/style.css" />
+</head>
+<body>
+<h1>
+    <em>"Life's Amazing Secrets: How to find balance and purpose in life"</em>
+</h1>
+
+<img src="image/bookimage_1.jpg"  alt="Book Image 1" />
+
+<div id="introduction">
+    <h2>About</h2>
+    <p>
+        Sri Gaur Gopal Das’s philosophy out from his years of wisdom and thrusts
+        it back where it belongs, in our daily lives, helping all of us
+        approaching any problem with equanimity and poise. A kind of
+        Spiritualistic manual for life, you will turn to it time and time again
+        and learn to tear through any obstacle, resolve conflicts, forgive and
+        value the relationships. An absolute must-read and I guarantee you that
+        you’ll enjoy Gaur Gopal Das Ji’s sense of humour in every chapter as
+        much as we cherish in his videos. There are four principles (wheels)
+        that form the foundation of a happy life.
+    </p>
+    <h3>Books By Gaur Gopal Das</h3>
+    <ul>
+        <li>Life's Amazing Secrets: How to find balance and purpose in life</li>
+        <li>
+            The Way of the Monk: The Four Steps to Peace, Purpose and Lasting
+            Happiness
+        </li>
+    </ul>
+    <h3>OverView</h3>
+    <p>
+        I came to know about Gaur Gopal Das Ji when I came across one of his
+        videos on YouTube. I was really fascinated by his thoughts and her
+        teachings. So, I researched books written by him and bought
+        <em>Life’s Amazing </em>
+        Secrets online from Amazon. I am really glad I did it because the
+        insights, examples and the story are simple to understand and are
+        life-changing if one truly understands the motive behind the same. So,
+        in this book, Gaur Gopal Das Ji talks about the 4 principles that form
+        the foundation of a happy life. These are Personal life, Relationships,
+        Work life, and Social Contribution. He talks how to keep them balanced
+        to live a life full of values and happiness.
+    </p>
+</div>
+<div class="tex   t">
+    <h2>Main Content</h2>
+
+    <ol>
+        <li>Wheel 1: Personal life</li>
+        <ul>
+            <li>Growing through Gratitude</li>
+            <li>Press Pause</li>
+            <li>Why Worry</li>
+            <li>Spiritual Practice</li>
+        </ul>
+
+        <li>Wheel 2: Relationships</li>
+        <ul>
+            <li>Speaking Sensitively</li>
+            <li>A Virtuous Vision</li>
+            <li>Correcting Cautiously</li>
+            <li>Forgiveness</li>
+            <li>Association Matters</li>
+        </ul>
+        <li>Wheel 3: Work life</li>
+        <ul>
+            <li>Competition Crossroads</li>
+            <li>Self-Discovery</li>
+            <li>Decoding Spirituality at Work</li>
+            <li>Integrity and Character</li>
+        </ul>
+        <li>Wheel 4: Social Contribution</li>
+        <ul>
+            <li>Selfless Sacrifice</li>
+            <li>Family First</li>
+            <li>The Nation Narrative</li>
+            <li>Service Brings Joy</li>
+        </ul>
+    </ol>
+    <img src="image/bookimage_3.jpg" alt="Book2" />
+    <h3>Review</h3>
+    <p>
+        Overall, it’s been a book that I can pick up anytime I feel low or out
+        of balance. It’s written beautifully and presented well. The language is
+        quite easy and it is neither fast-paced nor slow. I read this book in 2
+        sittings as I was truly gripped by it and it wasn’t easy to put this
+        down. So, I must say that it is quite engaging. I highly suggest you buy
+        a Life’s Amazing Secrets. You won’t be disappointed at all.
+    </p>
+</div>
+<div>
+    <h2>Media</h2>
+    <a href="https://gaurgopaldas.com/"> More Info.</a>
+</div>
+
+<script>
+    function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function checkCookie() {
+        var user=getCookie("username");
+        if (user != "") {
+            alert("Welcome again " + user);
+        } else {
+            user = prompt("Please enter your name:","");
+            if (user != "" && user != null) {
+                setCookie("username", user, 30);
+            }
+        }
+    }
+</script>
+</head>
+
+<body onload="checkCookie()"></body>
+
+
+
+
+</body>
+</html>
